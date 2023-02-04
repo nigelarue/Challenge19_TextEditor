@@ -13,6 +13,7 @@ const initdb = async () =>
   });
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
+// small wrapper that makes IndexedDB that is referenced above in import.
 export const putDb = async (content) => {
   console.log('putDb implemented');
   const jateDatabase = await openDB('jate', 1);
