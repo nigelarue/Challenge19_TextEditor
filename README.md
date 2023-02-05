@@ -4,29 +4,30 @@ J.A.T.E is a text editor progressive web app (PWA) that will work in supported b
 
 ## Installation
 
-Follow the link and press the [install button](https://dry-journey-48231.herokuapp.com/) to install the package manager.
+Follow the scripts outlined in package.json to install packages OR press the [install button](https://dry-journey-48231.herokuapp.com/) to install the package manager.
 
 ## Usage
 
-Install webpack and webpack-cli as devDependencies in your project:
 ```md 
-npm install webpack webpack-cli --save-dev
-```
+Install webpack and webpack-cli as devDependencies in your project:
+
+    npm install webpack webpack-cli --save-dev
+
 Create a webpack configuration file named webpack.config.js in the root directory of your project.
 
 Finally, run the webpack script to bundle your app:
-```md
-npm run build
+
+    npm run build
 ```
-* Scripts are in the root & client directory's `package.json`.
+* Scripts are in the root & client directory's 'package.json'.
 
-* `npm run build` script and start the server.
+* "npm run build" script and start the server.
 
-* `cd server nodemon server.js --ignore client` server script changes the current working directory to "server" using the `cd` command and starts the development server using `modemon`, which reloads the server when changes are made to the code, and runs the "server.js" with the `nodemon` command, while `--ignore` starts just the server and ignores the "client" directory even if changes are made.
+* "cd server nodemon server.js --ignore client" server script changes the current working directory to "server" using the 'cd' command and starts the development server using 'modemon', which reloads the server when changes are made to the code, and runs the "server.js" with the 'nodemon' command, while '--ignore' starts just the server and ignores the "client" directory even if changes are made.
 
-* `cd client && npm run build` changes the current working directory to "client" using the `cd` command and runs the webpack build script in the client directory.
+* "cd client && npm run build" changes the current working directory to "client" using the 'cd' command and runs the webpack build script in the client directory.
 
-* `cd server && npm i && cd ../client && npm i` script changes the current working directory to "server" using the `cd` command and installs the dependencies for the "server" directory with the `npm i` command and then does the same for "client" directory.
+* "cd server && npm i && cd ../client && npm i" script changes the current working directory to "server" using the 'cd' command and installs the dependencies for the "server" directory with the 'npm i' command and then does the same for "client" directory.
 
 * The web application can be installed from the web address provided by Heroku.
 
@@ -48,7 +49,7 @@ SO THAT I can reliably retrieve them for later use
 GIVEN a text editor web application
 WHEN I open my application in my editor
 THEN I should see a client server folder structure
-WHEN I run `npm run start` from the root directory
+WHEN I run 'npm run start' from the root directory
 THEN I find that my application should start up the backend and serve the client
 WHEN I run the text editor application from my terminal
 THEN I find that my JavaScript files have been bundled using webpack
